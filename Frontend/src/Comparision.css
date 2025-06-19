@@ -1,0 +1,86 @@
+/* Comparison.css */
+.comparison-container {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+}
+
+.comparison-container h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+  font-size: 1.5em;
+}
+
+.clear-comparison-button { /* General style for buttons within comparison */
+  margin-bottom: 20px;
+  padding: 10px 18px;
+  background-color: #6c757d; /* A neutral grey */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95em;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.clear-comparison-button:hover {
+  background-color: #5a6268;
+}
+
+.back-to-chat-button { /* Specific if needed, but inherits from above */
+  display: block; /* Make it take its own line if desired */
+  margin-left: auto;
+  margin-right: auto; /* Center it */
+}
+
+
+.comparison-table-wrapper {
+  overflow-x: auto; /* Crucial for responsiveness */
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse; /* Cleaner look */
+  margin-top: 15px;
+  min-width: 700px; /* Ensures table has a minimum width before scrolling */
+}
+
+.comparison-table th,
+.comparison-table td {
+  border: 1px solid #e0e0e0;
+  padding: 12px 15px; /* More padding */
+  text-align: left;
+  vertical-align: top; /* Good for cells with more text */
+}
+
+.comparison-table th {
+  background-color: #f8f9fa; /* Lighter header */
+  font-weight: 600; /* Slightly bolder */
+  color: #495057;
+  position: sticky; /* Makes header sticky if table scrolls vertically */
+  top: 0;
+  z-index: 1;
+}
+
+.comparison-table td b { /* For the feature label in the first column */
+  color: #333;
+}
+
+.comparison-table td a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.comparison-table td a:hover {
+  text-decoration: underline;
+}
+
+.comparison-table tr:nth-child(even) td { /* Zebra striping for rows */
+  background-color: #fdfdfd;
+}
