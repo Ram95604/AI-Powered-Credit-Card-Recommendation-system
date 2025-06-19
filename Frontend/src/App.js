@@ -34,7 +34,7 @@ function App() {
     setShowComparison(false);
 
     try {
-      const res = await axios.post("http://localhost:3001/chat", {
+      const res = await axios.post("https://creditcard-backend-production.up.railway.app/chat", {
         userId,
         message: userMessageText,
       });
@@ -77,7 +77,7 @@ function App() {
     }
     setIsLoading(true);
     try {
-      const res = await axios.post("http://localhost:3001/compare-cards", {
+      const res = await axios.post("https://creditcard-backend-production.up.railway.app/compare-cards", {
         cardNames: cardsToCompare,
       });
       console.log("Comparing these cards:", cardsToCompare);
