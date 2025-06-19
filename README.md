@@ -32,7 +32,7 @@ A full-stack web application that recommends the best credit card to users based
 | Frontend  | React.js, Tailwind CSS         |
 | Backend   | Node.js, Express.js, Axios     |
 | AI        | Together AI (Llama-3-70B model)|
-| Database  | MySQL (locally via XAMPP / remotely via db4free) |
+| Database  | MySQL (locally via XAMPP / remotely via Railway) |
 | Deployment| Vercel (Frontend), Railway (Backend) |
 | Others    | dotenv, CORS, body-parser      |
 
